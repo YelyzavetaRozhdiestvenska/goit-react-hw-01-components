@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Statistic, Title, StatList, Item, Label, Percentage} from './statistics.style';
 
 export const Statistics = ({stats, title}) => {
@@ -14,11 +14,6 @@ export const Statistics = ({stats, title}) => {
         </Statistic>
     )
 }
-
-
-
-
-
 
 
 
