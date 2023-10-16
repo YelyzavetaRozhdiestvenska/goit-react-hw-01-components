@@ -8,8 +8,12 @@ justify-content: center;
 gap: 10px;
 margin: auto;
 width: 360px;
+height: 420px;
 text-align: center;
 margin-bottom: 40px;
+border: 2px solid #808080;
+border-radius: 10px;
+box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
 `;
 
 export const Description = styled.div`
@@ -55,7 +59,7 @@ list-style: none;
 `;
 
 export const StatsItem = styled.li`
-display: block;
+display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;

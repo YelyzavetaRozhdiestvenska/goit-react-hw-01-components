@@ -19,6 +19,7 @@ export const Item = styled.li`
 display: flex;
 border: 2px solid #808080;
 border-radius: 5px;
+box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
 width: 200px;
 padding: 5px;
 `;

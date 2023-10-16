@@ -23,7 +23,7 @@ import {ProfileCard, Description, Avatar, Name, Tag, Location, StatsList, StatsI
 
 function Stats({ stats }) {
   return <StatsList>
-      {Object.entries(stats).map((key, value) => 
+      {Object.entries(stats).map(([key, value]) => 
         <StatsItem>
         <Label>{key}</Label>
         <Quantity>{value}</Quantity>
@@ -32,7 +32,9 @@ function Stats({ stats }) {
 }
 
 export const Profile = ({item: {username, tag, location, avatar, stats}}) => {
-   
+    
+
+
     return (<ProfileCard>
     <Description>
       <Avatar
@@ -42,7 +44,7 @@ export const Profile = ({item: {username, tag, location, avatar, stats}}) => {
       <Tag>@{tag}</Tag>
       <Location>{location}</Location>
     </Description>
-    <Stats stats={stats} />
+    <Stats stats={stats}/>
     </ProfileCard>)
 }
 
