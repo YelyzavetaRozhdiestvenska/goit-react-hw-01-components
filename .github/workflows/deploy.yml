@@ -22,7 +22,8 @@ jobs:
 
       - name: Install, lint, build 🔧
         run: |
-          ls -a
+          pwd
+          ls $(pwd)/src/components
           npm install
           npm run lint:js
           npm run build
