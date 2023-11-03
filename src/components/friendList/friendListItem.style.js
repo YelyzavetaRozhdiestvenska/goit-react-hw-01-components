@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 
-
-
-
 export const Status = styled.span`
 display: block;
 margin-left: 10px;
@@ -11,9 +8,7 @@ margin-bottom: auto;
 width: 14px;
 height: 14px;
 border-radius: 50%;
-background-color: ${props => {
-    return props.isOnline ? 'green' : 'red';
-  }};
+background-color: ${props => props.$isOnline ? 'green' : 'red'};
 `;
 
 export const Avatar = styled.img`
