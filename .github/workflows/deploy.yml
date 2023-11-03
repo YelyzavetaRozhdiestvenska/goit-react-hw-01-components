@@ -22,6 +22,7 @@ jobs:
 
       - name: Install, lint, build 🔧
         run: |
+          ls -a
           npm install
           npm run lint:js
           npm run build
